@@ -1,0 +1,17 @@
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  gap: 20px; /* gap between cards */
+}
+
+.complete-package-section p {
+  color: rgb(196, 196, 196);
+  margin: 0;
+}
+
+.complete-package-section h1 {
+  margin-top: 4px;
+  margin-bottom: 32px;
+  font-weight: 800;
+}

@@ -1,45 +1,59 @@
 import React from "react";
+import PackageCard from "../../../components/PackageCard/PackageCard";
+import "./PackageSection.css";
 
 export default function PackageSection() {
   const fadeText = "Complete Package";
   const title = "From product design to software continuous delivery";
   const cardContent = [
     {
-      icon: "../../../assets/package-section/icon-website-development.svg",
-      cardTitle: "Website Development",
+      iconPath:
+        "https://raw.githubusercontent.com/darrel26/alba-website/63060e95107809633f6a97b609c063266f0ab567/src/assets/package-section/icon-website-development.svg",
+      cardTitle: "Website development",
       cardText:
         "High-performance website to reach out more your potential customers",
     },
     {
-      icon: "../../../assets/package-section/icon-mobile-development.svg",
-      cardTitle: "Website Development",
-      cardText:
-        "High-performance website to reach out more your potential customers",
+      iconPath:
+        "https://raw.githubusercontent.com/darrel26/alba-website/63060e95107809633f6a97b609c063266f0ab567/src/assets/package-section/icon-mobile-development.svg",
+      cardTitle: "Mobile apps development",
+      cardText: "To accelerate your business process",
     },
     {
-      icon: "../../../assets/package-section/icon-digital-product.svg",
-      cardTitle: "Website Development",
+      iconPath:
+        "https://raw.githubusercontent.com/darrel26/alba-website/63060e95107809633f6a97b609c063266f0ab567/src/assets/package-section/icon-digital-product.svg",
+      cardTitle: "Digital product design",
       cardText:
-        "High-performance website to reach out more your potential customers",
+        "complete digital product creations from UX prototyping to final UI designs",
     },
     {
-      icon: "../../../assets/package-section/icon-maintenance.svg",
-      cardTitle: "Website Development",
-      cardText:
-        "High-performance website to reach out more your potential customers",
+      iconPath:
+        "https://raw.githubusercontent.com/darrel26/alba-website/63060e95107809633f6a97b609c063266f0ab567/src/assets/package-section/icon-maintenance.svg",
+      cardTitle: "Maintenance",
+      cardText: "Make sure your digital environment keep online and updated",
     },
     {
-      icon: "../../../assets/package-section/icon-cms-development.svg",
-      cardTitle: "Website Development",
-      cardText:
-        "High-performance website to reach out more your potential customers",
+      iconPath:
+        "https://raw.githubusercontent.com/darrel26/alba-website/63060e95107809633f6a97b609c063266f0ab567/src/assets/package-section/icon-cms-development.svg",
+      cardTitle: "CMS development",
+      cardText: "you can update your website content yourself",
     },
     {
-      icon: "../../../assets/package-section/icon-payment-gateway.svg",
-      cardTitle: "Website Development",
-      cardText:
-        "High-performance website to reach out more your potential customers",
+      iconPath:
+        "https://raw.githubusercontent.com/darrel26/alba-website/63060e95107809633f6a97b609c063266f0ab567/src/assets/package-section/icon-payment-gateway.svg",
+      cardTitle: "Integrated payment gateway",
+      cardText: "Simplify the payment system with just one step",
     },
   ];
-  return <div>Complete Package</div>;
+  return (
+    <div className="complete-package-section">
+      <p>{fadeText}</p>
+      <h1>{title}</h1>
+      <div className="cards-container">
+        {cardContent.map((card, index) => (
+          <PackageCard key={index} {...card} />
+        ))}
+      </div>
+    </div>
+  );
 }
