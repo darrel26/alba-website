@@ -1,0 +1,24 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.nav-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu {
+  display: flex;
+  flex: 2;
+  font-weight: bold;
+  list-style: none;
+  font-size: 18px;
+  justify-content: space-evenly;
+}
+
+.nav-menu > li > a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}

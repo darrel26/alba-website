@@ -1,0 +1,56 @@
+.hero-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 100px 0;
+}
+
+.left-section {
+  display: flex;
+  flex-flow: nowrap column;
+  flex: 2;
+}
+
+.left-section h1.bold-font {
+  font-size: 48px;
+  text-align: left;
+  margin: 0;
+}
+
+.left-section h1.lighter-font {
+  font-size: 48px;
+  margin: 0;
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.left-section a.btn-cta {
+  margin-top: 25px;
+  width: 100px;
+}
+
+.description-container {
+  display: flex;
+  align-items: center;
+}
+
+.line-shape {
+  background-color: rgb(255, 206, 7);
+  width: 75px;
+  height: 5px;
+  margin-right: 18px;
+  border-radius: 25px;
+}
+
+.description-container p {
+  padding: 0;
+}
+
+.right-section {
+  flex: 2;
+}
+
+.image-container img {
+  width: 100%;
+}
