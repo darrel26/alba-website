@@ -1,0 +1,6 @@
+.stack-logo-container {
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 48px;
+}
