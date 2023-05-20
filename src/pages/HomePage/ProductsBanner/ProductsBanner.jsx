@@ -2,7 +2,7 @@ import React from "react";
 import NumberOfSales from "../../../components/NumberOfSales/NumberOfSales";
 import "./ProductsBanner.css";
 
-const sales = [
+const salesData = [
   { number: 1000, sales: "Designs" },
   { number: 30, sales: "Products" },
   { number: 58, sales: "Website Developments" },
@@ -16,8 +16,8 @@ export default function ProductsBanner() {
         Technology
       </h1>
       <div className="number-of-sales">
-        {sales.map((sale, index) => (
-          <NumberOfSales key={index} {...sale} />
+        {salesData.map(({ number, sales, id }) => (
+          <NumberOfSales key={id} number={number} sales={sales} />
         ))}
       </div>
     </div>
