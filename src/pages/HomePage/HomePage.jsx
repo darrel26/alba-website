@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection/HeroSection";
 import PackageSection from "./PackageSection/PackageSection";
 import TechStackSection from "./TechStackSection/TechStackSection";
 import ProductsBanner from "./ProductsBanner/ProductsBanner";
+import PortofolioSection from "./PortofolioSection/PortofolioSection";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       <PackageSection />
       <TechStackSection />
       <ProductsBanner />
+      <PortofolioSection />
     </>
   );
 }

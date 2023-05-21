@@ -1,0 +1,43 @@
+.portofolio-section {
+  width: 100%;
+}
+
+.portofolio-section p {
+  margin: 50px 0 0 0;
+  color: rgb(196, 196, 196);
+}
+
+.portofolio-section h1 {
+  margin: 4px 0 0;
+}
+
+.portofolio-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  margin: 50px 0 80px 0;
+}
+
+.portofolio-card-container > .card > .card-icon-container img {
+  width: 100%;
+}
+
+.portofolio-card-container > .card > .card-body {
+  padding: 20px 24px 24px 24px;
+}
+
+.portofolio-card-container > .card > .card-body > .card-category {
+  font-size: 12px;
+  color: rgb(196, 196, 196);
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+
+.portofolio-card-container > .card > .card-body > .card-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.portofolio-card-container > .card > .card-body > .card-text {
+  margin-top: 0;
+  color: rgb(0, 0, 0);
+}

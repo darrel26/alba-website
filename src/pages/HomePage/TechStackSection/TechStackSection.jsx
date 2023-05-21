@@ -1,5 +1,6 @@
 import React from "react";
 import "./TechStackSection.css";
+import Container from "../../../components/Container/Container";
 
 const stackLogo = [
   {
@@ -76,14 +77,16 @@ const stackLogo = [
 
 export default function TechStackSection() {
   return (
-    <div className="stack-logo-container">
-      {stackLogo.map(({ logoPath, label }, index) => {
-        return (
-          <div className="logo" key={index}>
-            <img src={logoPath} alt={label} />
-          </div>
-        );
-      })}
-    </div>
+    <Container size={"xl"}>
+      <div className="stack-logo-container">
+        {stackLogo.map(({ logoPath, label }, index) => {
+          return (
+            <div className="logo" key={index}>
+              <img src={logoPath} alt={label} />
+            </div>
+          );
+        })}
+      </div>
+    </Container>
   );
 }

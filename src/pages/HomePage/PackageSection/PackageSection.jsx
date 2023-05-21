@@ -1,6 +1,7 @@
 import React from "react";
-import PackageCard from "../../../components/PackageCard/PackageCard";
 import "./PackageSection.css";
+import Container from "../../../components/Container/Container";
+import Card from "../../../components/Card/Card";
 
 export default function PackageSection() {
   const fadeText = "Complete Package";
@@ -46,14 +47,16 @@ export default function PackageSection() {
     },
   ];
   return (
-    <div className="complete-package-section">
-      <p>{fadeText}</p>
-      <h1>{title}</h1>
-      <div className="cards-container">
-        {cardContent.map((card, index) => (
-          <PackageCard key={index} {...card} />
-        ))}
+    <Container size={"xl"}>
+      <div className="complete-package-section">
+        <p>{fadeText}</p>
+        <h1>{title}</h1>
+        <div className="cards-container">
+          {cardContent.map((card, index) => (
+            <Card key={index} {...card} />
+          ))}
+        </div>
       </div>
-    </div>
+    </Container>
   );
 }
