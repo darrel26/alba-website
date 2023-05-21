@@ -1,0 +1,37 @@
+.testimonial-card {
+  text-align: left;
+  width: 500px;
+}
+
+.testimonial-card h1 {
+  margin: 0;
+}
+
+.testimonial-card h3 {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.user-review {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.avatar-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(194, 194, 194);
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user-position {
+  font-size: 14px;
+  color: rgb(194, 194, 194);
+}
