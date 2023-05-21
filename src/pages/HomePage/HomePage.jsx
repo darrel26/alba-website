@@ -6,6 +6,7 @@ import TechStackSection from "./TechStackSection/TechStackSection";
 import ProductsBanner from "./ProductsBanner/ProductsBanner";
 import PortofolioSection from "./PortofolioSection/PortofolioSection";
 import TestimonialSection from "./TestimonialSection/TestimonialSection";
+import ProductCarousel from "./ProductCarousel/ProductCarousel";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
       <ProductsBanner />
       <PortofolioSection />
       <TestimonialSection />
+      <ProductCarousel />
     </>
   );
 }
