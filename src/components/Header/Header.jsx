@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../assets/alba-logo.svg";
 import Button from "../Button/Button";
 import "./Header.css";
+import Container from "../Container/Container";
 
 export default function Header() {
   const menuItems = [
@@ -22,11 +23,13 @@ export default function Header() {
 
   return (
     <nav>
-      <div className="nav-logo">
-        <img src={Logo} alt="logo" />
-      </div>
-      <ul className="nav-menu">{renderMenuItems()}</ul>
-      <Button content={"Contact Us"} />
+      <Container size={"xl"}>
+        <div className="nav-logo">
+          <img src={Logo} alt="logo" />
+        </div>
+        <ul className="nav-menu">{renderMenuItems()}</ul>
+        <Button content={"Contact Us"} />
+      </Container>
     </nav>
   );
 }
