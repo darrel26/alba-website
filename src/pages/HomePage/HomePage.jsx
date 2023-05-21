@@ -8,6 +8,7 @@ import PortofolioSection from "./PortofolioSection/PortofolioSection";
 import TestimonialSection from "./TestimonialSection/TestimonialSection";
 import ProductCarousel from "./ProductCarousel/ProductCarousel";
 import CTASection from "./CTASection/CTASection";
+import FooterSection from "./FooterSection/FooterSection";
 
 export default function HomePage() {
   return (
@@ -21,6 +22,7 @@ export default function HomePage() {
       <TestimonialSection />
       <ProductCarousel />
       <CTASection />
+      <FooterSection />
     </>
   );
 }
