@@ -1,5 +1,4 @@
 import React from "react";
-import PackageCard from "../../../components/PackageCard/PackageCard";
 import "./PackageSection.css";
 import Container from "../../../components/Container/Container";
 import Card from "../../../components/Card/Card";
