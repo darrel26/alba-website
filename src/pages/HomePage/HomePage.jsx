@@ -7,6 +7,7 @@ import ProductsBanner from "./ProductsBanner/ProductsBanner";
 import PortofolioSection from "./PortofolioSection/PortofolioSection";
 import TestimonialSection from "./TestimonialSection/TestimonialSection";
 import ProductCarousel from "./ProductCarousel/ProductCarousel";
+import CTASection from "./CTASection/CTASection";
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
       <PortofolioSection />
       <TestimonialSection />
       <ProductCarousel />
+      <CTASection />
     </>
   );
 }
