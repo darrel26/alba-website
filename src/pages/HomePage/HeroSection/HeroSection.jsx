@@ -12,7 +12,7 @@ export default function HeroSection() {
   const buttonText = "Book Now";
 
   return (
-    <Container size={"xl"}>
+    <Container size={"xl hero-section"}>
       <div className="hero-section-container">
         <div className="left-section">
           <h1 className="bold-font">{title}</h1>
