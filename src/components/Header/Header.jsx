@@ -40,7 +40,9 @@ export default function Header() {
         <ul className={`nav-menu${isMenuOpen ? " open" : ""}`}>
           {renderMenuItems()}
         </ul>
-        <Button content={"Contact Us"} />
+        <div className={`btn-contact-us ${isMenuOpen ? "open" : ""}`}>
+          <Button content={"Contact Us"} />
+        </div>
       </Container>
     </nav>
   );
