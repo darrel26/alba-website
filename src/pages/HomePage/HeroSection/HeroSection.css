@@ -76,8 +76,8 @@
     height: 100%;
     background-image: url(../../../assets/hero-banner.jpg); /* Replace with your background image */
     background-size: cover;
-    background-position: center;
-    filter: grayscale(90%) blur(4px);
+    background-position-y: 25px;
+    filter: grayscale(90%);
     z-index: -1;
   }
 

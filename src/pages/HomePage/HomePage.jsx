@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import Header from "../../components/Header/Header";
 import HeroSection from "./HeroSection/HeroSection";
 import PackageSection from "./PackageSection/PackageSection";
@@ -9,8 +9,11 @@ import TestimonialSection from "./TestimonialSection/TestimonialSection";
 import ProductCarousel from "./ProductCarousel/ProductCarousel";
 import CTASection from "./CTASection/CTASection";
 import FooterSection from "./FooterSection/FooterSection";
+import LoginModal from "../Login/LoginModal/LoginModal";
+import { LoginStatusContext } from "../Login/LoginContext";
 
 export default function HomePage() {
+  const { loginStatus } = useContext(LoginStatusContext);
   return (
     <>
       <Header />
@@ -23,6 +26,7 @@ export default function HomePage() {
       <ProductCarousel />
       <CTASection />
       <FooterSection />
+      {loginStatus ? "" : <LoginModal />}
     </>
   );
 }
