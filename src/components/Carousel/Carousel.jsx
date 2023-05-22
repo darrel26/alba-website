@@ -24,7 +24,6 @@ export default function Carousel({ items }) {
   const getNumberOfPage = () => {
     let page = [];
     let pageSize = (items.length - 1) / device;
-    console.log(pageSize);
     for (let i = 0; i <= pageSize; i++) {
       page.push(<span onClick={() => setCurrentIndex(i)}></span>);
     }
