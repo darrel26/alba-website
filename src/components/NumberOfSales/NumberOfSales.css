@@ -9,3 +9,16 @@
   font-size: 24px;
   font-weight: 200;
 }
+
+@media (max-width: 425px) {
+  .number-of-sales {
+    margin: 25px 40px;
+    padding: 0px;
+    width: 85%;
+    flex-direction: column;
+  }
+
+  .number-of-sales-item > h2 {
+    font-size: 100px;
+  }
+}

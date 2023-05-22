@@ -92,3 +92,13 @@
     display: none;
   }
 }
+
+@media (max-width: 425px) {
+  .left-section h1.bold-font {
+    font-size: 32px;
+  }
+
+  .left-section h1.lighter-font {
+    font-size: 32px;
+  }
+}

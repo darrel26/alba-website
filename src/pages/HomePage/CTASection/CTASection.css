@@ -26,3 +26,12 @@
   background-color: transparent;
   border: 1px solid rgb(0, 0, 0);
 }
+
+@media (max-width: 425px) {
+  .cta-section h4 {
+    font-size: 12px;
+  }
+  .cta-section h1 {
+    font-size: 24px;
+  }
+}
