@@ -35,3 +35,10 @@
 .complete-package-section > .cards-container > .card > .card-body > .card-text {
   font-size: 14px;
 }
+
+@media (max-width: 425px) {
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}

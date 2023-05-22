@@ -57,3 +57,22 @@
   background-color: rgb(194, 194, 194);
   border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+  .carousel-content {
+    gap: 30px;
+  }
+
+  .carousel-content > * {
+    width: calc((100% / 3) - 30px);
+  }
+}
+
+@media (max-width: 425px) {
+  .carousel-content {
+    gap: 10px;
+  }
+  .carousel-content > * {
+    width: calc((100% / 1) - 10px);
+  }
+}

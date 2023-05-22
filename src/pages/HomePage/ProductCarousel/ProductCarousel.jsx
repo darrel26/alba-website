@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Carousel from "../../../components/Carousel/Carousel";
 import Container from "../../../components/Container/Container";
 
@@ -35,7 +35,7 @@ const productsData = [
   },
 ];
 
-export default function ProductCarousel() {
+export default React.memo(function ProductCarousel() {
   const carouselItem = productsData.map((product) => (
     <div key={product.id} className="carousel-item">
       <img src={product.imageUrl} alt={product.name} />
@@ -47,4 +47,4 @@ export default function ProductCarousel() {
       <Carousel items={carouselItem} />
     </Container>
   );
-}
+});
