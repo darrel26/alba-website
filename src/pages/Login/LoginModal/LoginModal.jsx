@@ -5,7 +5,7 @@ import "./LoginModal.css";
 import { LoginStatusContext } from "../LoginContext";
 
 export default function LoginModal() {
-  const { setLoginStatus } = useContext(LoginStatusContext);
+  const { loginStatus, setLoginStatus } = useContext(LoginStatusContext);
   const [loginData, setLoginData] = useState({
     email: "",
     password: "",
@@ -27,6 +27,7 @@ export default function LoginModal() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+
     const response = await fetch("https://reqres.in/api/login", {
       method: "POST",
       headers: {
@@ -35,16 +36,21 @@ export default function LoginModal() {
       },
       body: JSON.stringify(loginData),
     });
-    const { status, ok } = response;
 
-    if (status === 200 && ok) {
+    if (response.status === 200) {
       sessionStorage.setItem("loginstatus", "true");
-      setLoginStatus(true);
+      setLoginStatus({
+        ...loginStatus,
+        status: true,
+      });
     } else {
       sessionStorage.setItem("loginstatus", "false");
+      setLoginStatus({
+        status: false,
+        message:
+          response.status === 400 ? "user not found!" : "API Endpoint error!",
+      });
     }
-
-    return response;
   };
 
   return (
@@ -70,6 +76,12 @@ export default function LoginModal() {
             value={loginData.password}
             onChange={handlePasswordChange}
           />
+        </div>
+        <div
+          className="error-message"
+          style={{ display: loginStatus.status ? "none" : "block" }}
+        >
+          {loginStatus.message}
         </div>
         <button className="btn-login" type="submit">
           Login

@@ -26,7 +26,7 @@ export default function HomePage() {
       <ProductCarousel />
       <CTASection />
       <FooterSection />
-      {loginStatus ? "" : <LoginModal />}
+      {loginStatus.status ? "" : <LoginModal />}
     </>
   );
 }
